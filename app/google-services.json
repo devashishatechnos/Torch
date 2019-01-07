@@ -1,0 +1,352 @@
+{
+  "project_info": {
+    "project_number": "435764201547",
+    "firebase_url": "https://lifestyle-c68e7.firebaseio.com",
+    "project_id": "lifestyle-c68e7",
+    "storage_bucket": "lifestyle-c68e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435764201547:android:7bd08e15d8736a24",
+        "android_client_info": {
+          "package_name": "com.atechnos.new_stop_watch1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435764201547-q6srsoqiqkfsuet75qgjrk736pc2r1rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWExml3yxRaXwFy5A2Lsn8Fjd-iuwgBsc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435764201547:android:f92b9630d82856fd",
+        "android_client_info": {
+          "package_name": "com.atechnos.yoga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435764201547-q6srsoqiqkfsuet75qgjrk736pc2r1rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWExml3yxRaXwFy5A2Lsn8Fjd-iuwgBsc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435764201547:android:1dcacdd7180d351f",
+        "android_client_info": {
+          "package_name": "com.atechnos.entertainment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435764201547-q6srsoqiqkfsuet75qgjrk736pc2r1rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWExml3yxRaXwFy5A2Lsn8Fjd-iuwgBsc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435764201547:android:68e95bae14ea3303",
+        "android_client_info": {
+          "package_name": "com.atechnos.loveastrology"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435764201547-q6srsoqiqkfsuet75qgjrk736pc2r1rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWExml3yxRaXwFy5A2Lsn8Fjd-iuwgBsc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435764201547:android:af409b4dcb04c101",
+        "android_client_info": {
+          "package_name": "com.atechnos.astroatechnos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435764201547-q6srsoqiqkfsuet75qgjrk736pc2r1rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWExml3yxRaXwFy5A2Lsn8Fjd-iuwgBsc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435764201547:android:95f26715fc547faa",
+        "android_client_info": {
+          "package_name": "com.atechnos.best_shaayari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435764201547-q6srsoqiqkfsuet75qgjrk736pc2r1rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWExml3yxRaXwFy5A2Lsn8Fjd-iuwgBsc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435764201547:android:56e22b5cff996f71",
+        "android_client_info": {
+          "package_name": "com.atechnos.quotes_4_u"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435764201547-q6srsoqiqkfsuet75qgjrk736pc2r1rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWExml3yxRaXwFy5A2Lsn8Fjd-iuwgBsc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435764201547:android:b96cf606afbf8bf9",
+        "android_client_info": {
+          "package_name": "com.atechnos.healthy_sex_new"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435764201547-q6srsoqiqkfsuet75qgjrk736pc2r1rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWExml3yxRaXwFy5A2Lsn8Fjd-iuwgBsc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435764201547:android:57c22d73f26856c9",
+        "android_client_info": {
+          "package_name": "com.atechnos.loveyou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435764201547-q6srsoqiqkfsuet75qgjrk736pc2r1rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWExml3yxRaXwFy5A2Lsn8Fjd-iuwgBsc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435764201547:android:8473b2d452eee7bc",
+        "android_client_info": {
+          "package_name": "com.atechnos.flash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435764201547-q6srsoqiqkfsuet75qgjrk736pc2r1rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWExml3yxRaXwFy5A2Lsn8Fjd-iuwgBsc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435764201547:android:d74a15ce8f372b82",
+        "android_client_info": {
+          "package_name": "com.atechnos.torch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435764201547-q6srsoqiqkfsuet75qgjrk736pc2r1rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWExml3yxRaXwFy5A2Lsn8Fjd-iuwgBsc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
