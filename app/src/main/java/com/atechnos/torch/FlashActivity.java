@@ -321,7 +321,7 @@ public class FlashActivity extends Activity {
 //            //  progressDialog.setCancelable(false);
 //            //  progressDialog.setTitle("Connecting Server!");
 //            //  progressDialog.setMessage("Loading Please Wait");
-//
+
 //            //  progressDialog.show();
 //
 //        }
