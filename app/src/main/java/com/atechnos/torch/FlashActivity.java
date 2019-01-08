@@ -73,68 +73,68 @@ public class FlashActivity extends Activity {
 
 
         // final RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.mylayout);
-        SlidingDrawer simpleSlidingDrawer = (SlidingDrawer) findViewById(R.id.simpleSlidingDrawer); // initiate the SlidingDrawer
-        final ImageView handleButton = (ImageView) findViewById(R.id.handle);
+        //SlidingDrawer simpleSlidingDrawer = (SlidingDrawer) findViewById(R.id.simpleSlidingDrawer); // initiate the SlidingDrawer
+       // final ImageView handleButton = (ImageView) findViewById(R.id.handle);
         final Animation animation = new AlphaAnimation(1, 0);
         animation.setDuration(1000);
         animation.setInterpolator(new LinearInterpolator());
         animation.setRepeatCount(Animation.INFINITE);
         animation.setRepeatMode(Animation.REVERSE);
-        handleButton.startAnimation(animation);// inititate a Button which is used for handling the content of SlidingDrawer
-        simpleListView = (ListView) findViewById(R.id.simpleListView);
-        simpleListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                SlidingModel model = (SlidingModel) parent.getItemAtPosition(position);
-
-                Intent intent = new Intent(Intent.ACTION_VIEW,
-
-                        // Uri.parse("market://search?q==" + packageName));
-                        Uri.parse(model.getAppurl()));
-                // progressDialog.dismiss();
-                if (intent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(intent);
-                }
-            }
-        });
-        simpleSlidingDrawer.setOnDrawerOpenListener(new SlidingDrawer.OnDrawerOpenListener() {
-            @Override
-            public void onDrawerOpened() {
-                JsonTask jsonTask = new JsonTask();
-                Boolean available;
-                if (isNetworkAvailable(FlashActivity.this)) {
-                    handleButton.setImageResource(R.drawable.jyright);
-                    jsonTask.execute(url_to_hit);
-                } else
-
-                {
-                    available = false;
-                    jsonTask.cancel(available);
-                    // tv.setText("you r not connected to intermnet");
-                    //Toast.makeText(getApplicationContext(), "No internet connection", Toast.LENGTH_LONG).show();
-
-
-                }
-
-
-                Log.e("Link", "value" + url_to_hit);
-                // relativeLayout.getBackground().setAlpha(80);
-            }
-        });
-        // implement setOnDrawerCloseListener event
-        simpleSlidingDrawer.setOnDrawerCloseListener(new SlidingDrawer.OnDrawerCloseListener() {
-            @Override
-            public void onDrawerClosed() {
-                // change the handle button text
-                // handleButton.setText("Open");
-                handleButton.setImageResource(R.drawable.jyleft);
-                // relativeLayout.getBackground().setAlpha(250);
-
-
-                // relativeLayout.setBackgroundResource(R.drawable.arabic);
-            }
-        });
-        simpleListView.setDivider(null);
+       // handleButton.startAnimation(animation);// inititate a Button which is used for handling the content of SlidingDrawer
+        //simpleListView = (ListView) findViewById(R.id.simpleListView);
+        // simpleListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                SlidingModel model = (SlidingModel) parent.getItemAtPosition(position);
+//
+//                Intent intent = new Intent(Intent.ACTION_VIEW,
+//
+//                        // Uri.parse("market://search?q==" + packageName));
+//                        Uri.parse(model.getAppurl()));
+//                // progressDialog.dismiss();
+//                if (intent.resolveActivity(getPackageManager()) != null) {
+//                    startActivity(intent);
+//                }
+//            }
+//        });
+//        simpleSlidingDrawer.setOnDrawerOpenListener(new SlidingDrawer.OnDrawerOpenListener() {
+//            @Override
+//            public void onDrawerOpened() {
+//                JsonTask jsonTask = new JsonTask();
+//                Boolean available;
+//                if (isNetworkAvailable(FlashActivity.this)) {
+//                    handleButton.setImageResource(R.drawable.jyright);
+//                    jsonTask.execute(url_to_hit);
+//                } else
+//
+//                {
+//                    available = false;
+//                    jsonTask.cancel(available);
+//                    // tv.setText("you r not connected to intermnet");
+//                    //Toast.makeText(getApplicationContext(), "No internet connection", Toast.LENGTH_LONG).show();
+//
+//
+//                }
+//
+//
+//                Log.e("Link", "value" + url_to_hit);
+//                // relativeLayout.getBackground().setAlpha(80);
+//            }
+//        });
+//        // implement setOnDrawerCloseListener event
+//        simpleSlidingDrawer.setOnDrawerCloseListener(new SlidingDrawer.OnDrawerCloseListener() {
+//            @Override
+//            public void onDrawerClosed() {
+//                // change the handle button text
+//                // handleButton.setText("Open");
+//                handleButton.setImageResource(R.drawable.jyleft);
+//                // relativeLayout.getBackground().setAlpha(250);
+//
+//
+//                // relativeLayout.setBackgroundResource(R.drawable.arabic);
+//            }
+//        });
+//        simpleListView.setDivider(null);
         chkPermission();
 
         btnSwitch = (ImageButton) findViewById(R.id.btnSwitch);
@@ -264,7 +264,7 @@ public class FlashActivity extends Activity {
             } else {
                 ActivityCompat.requestPermissions(FlashActivity.this,
                         new String[]{
-                                Manifest.permission.CAMERA, Manifest.permission.FLASHLIGHT
+                                Manifest.permission.CAMERA
                         }, REQUEST_CODE
                 );
             }
@@ -311,107 +311,107 @@ public class FlashActivity extends Activity {
         }
     }
 
-    class JsonTask extends AsyncTask<String, String, String> {
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            progressBar.setVisibility(View.VISIBLE);
-            // progressDialog.setIndeterminate(true);
-            //  progressDialog.setCancelable(false);
-            //  progressDialog.setTitle("Connecting Server!");
-            //  progressDialog.setMessage("Loading Please Wait");
-
-            //  progressDialog.show();
-
-        }
-
-        @Override
-        protected String doInBackground(String... params) {
-            BufferedReader bufferedReader = null;
-            HttpURLConnection httpURLConnection = null;
-            // Log.i("jsontask","inside doing ");
-
-            try {
-                URL url = new URL(params[0]);
-                httpURLConnection = (HttpURLConnection) url.openConnection();
-                //   httpURLConnection.setReadTimeout(10000 /* milliseconds */);
-                //  httpURLConnection.setConnectTimeout(15000 /* milliseconds */);
-                //connection connect
-                httpURLConnection.connect();
-                int response = httpURLConnection.getResponseCode();
-                Log.d("Link", "The response is: " + response);
-                //get the data from server into inputstream
-                InputStream inputStream = httpURLConnection.getInputStream();
-                bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-                //read the data line by line
-                StringBuffer reult = new StringBuffer();
-
-                Log.d("Link", "The result is: " + reult.toString());
-
-                String line = "";
-                while ((line = bufferedReader.readLine()) != null) {
-                    reult.append(line);
-                }
-                return reult.toString();
-
-
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            } finally {
-                if (httpURLConnection != null) {
-                    httpURLConnection.disconnect();
-                }
-                try {
-                    if (bufferedReader != null) {
-                        bufferedReader.close();
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(String s) {
-            super.onPostExecute(s);
-            progressBar.setVisibility(View.INVISIBLE);
-            // progressDialog.cancel();
-            Log.d("Link", "The response is: " + s);
-
-
-            List<SlidingModel> slidingmodels = null;
-            JSONArray parentarray = null;
-
-            try {
-                slidingmodels = new ArrayList<>();
-
-                parentarray = new JSONArray(s);
-                for (int i = 0; i < parentarray.length(); i++) {
-
-                    JSONObject parentobject = parentarray.getJSONObject(i);
-                    SlidingModel slidingModel = new SlidingModel();
-                    slidingModel.setProduct_id(parentobject.getInt("id"));
-                    slidingModel.setProduct_name(parentobject.getString("product_name"));
-                    slidingModel.setImage(parentobject.getString("img"));
-                    slidingModel.setAppurl(parentobject.getString("showurl"));
-                    slidingmodels.add(slidingModel);
-
-                    Log.e("Link", "Inage" + parentobject.getString("showurl"));
-                }
-
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-            SlidingAdapter movieAdapter = new SlidingAdapter(getApplicationContext(), R.layout.createlist_item, slidingmodels);
-            simpleListView.setAdapter(movieAdapter);
-
-
-        }
-    }
+//    class JsonTask extends AsyncTask<String, String, String> {
+//
+//        @Override
+//        protected void onPreExecute() {
+//            super.onPreExecute();
+//            progressBar.setVisibility(View.VISIBLE);
+//            // progressDialog.setIndeterminate(true);
+//            //  progressDialog.setCancelable(false);
+//            //  progressDialog.setTitle("Connecting Server!");
+//            //  progressDialog.setMessage("Loading Please Wait");
+//
+//            //  progressDialog.show();
+//
+//        }
+//
+//        @Override
+//        protected String doInBackground(String... params) {
+//            BufferedReader bufferedReader = null;
+//            HttpURLConnection httpURLConnection = null;
+//            // Log.i("jsontask","inside doing ");
+//
+//            try {
+//                URL url = new URL(params[0]);
+//                httpURLConnection = (HttpURLConnection) url.openConnection();
+//                //   httpURLConnection.setReadTimeout(10000 /* milliseconds */);
+//                //  httpURLConnection.setConnectTimeout(15000 /* milliseconds */);
+//                //connection connect
+//                httpURLConnection.connect();
+//                int response = httpURLConnection.getResponseCode();
+//                Log.d("Link", "The response is: " + response);
+//                //get the data from server into inputstream
+//                InputStream inputStream = httpURLConnection.getInputStream();
+//                bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+//                //read the data line by line
+//                StringBuffer reult = new StringBuffer();
+//
+//                Log.d("Link", "The result is: " + reult.toString());
+//
+//                String line = "";
+//                while ((line = bufferedReader.readLine()) != null) {
+//                    reult.append(line);
+//                }
+//                return reult.toString();
+//
+//
+//            } catch (MalformedURLException e) {
+//                e.printStackTrace();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            } finally {
+//                if (httpURLConnection != null) {
+//                    httpURLConnection.disconnect();
+//                }
+//                try {
+//                    if (bufferedReader != null) {
+//                        bufferedReader.close();
+//                    }
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//            return null;
+//        }
+//
+//        @Override
+//        protected void onPostExecute(String s) {
+//            super.onPostExecute(s);
+//            progressBar.setVisibility(View.INVISIBLE);
+//            // progressDialog.cancel();
+//            Log.d("Link", "The response is: " + s);
+//
+//
+//            List<SlidingModel> slidingmodels = null;
+//            JSONArray parentarray = null;
+//
+//            try {
+//                slidingmodels = new ArrayList<>();
+//
+//                parentarray = new JSONArray(s);
+//                for (int i = 0; i < parentarray.length(); i++) {
+//
+//                    JSONObject parentobject = parentarray.getJSONObject(i);
+//                    SlidingModel slidingModel = new SlidingModel();
+//                    slidingModel.setProduct_id(parentobject.getInt("id"));
+//                    slidingModel.setProduct_name(parentobject.getString("product_name"));
+//                    slidingModel.setImage(parentobject.getString("img"));
+//                    slidingModel.setAppurl(parentobject.getString("showurl"));
+//                    slidingmodels.add(slidingModel);
+//
+//                    Log.e("Link", "Inage" + parentobject.getString("showurl"));
+//                }
+//
+//            } catch (JSONException e) {
+//                e.printStackTrace();
+//            }
+//            SlidingAdapter movieAdapter = new SlidingAdapter(getApplicationContext(), R.layout.createlist_item, slidingmodels);
+//            simpleListView.setAdapter(movieAdapter);
+//
+//
+//        }
+//    }
 
 }
 
