@@ -399,7 +399,7 @@ public class FlashActivity extends Activity {
 //                    slidingModel.setImage(parentobject.getString("img"));
 //                    slidingModel.setAppurl(parentobject.getString("showurl"));
 //                    slidingmodels.add(slidingModel);
-//
+
 //                    Log.e("Link", "Inage" + parentobject.getString("showurl"));
 //                }
 //
