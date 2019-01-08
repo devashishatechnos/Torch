@@ -75,41 +75,41 @@
         </LinearLayout>
 
 
-        <SlidingDrawer
-            android:id="@+id/simpleSlidingDrawer"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:content="@+id/content"
-            android:handle="@+id/handle"
-            android:orientation="horizontal"
-            android:rotation="180">
-            <!-- Button for the handle of SlidingDrawer -->
+        <!--<SlidingDrawer-->
+            <!--android:id="@+id/simpleSlidingDrawer"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:content="@+id/content"-->
+            <!--android:handle="@+id/handle"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:rotation="180">-->
+            <!--&lt;!&ndash; Button for the handle of SlidingDrawer &ndash;&gt;-->
 
 
-            <ImageView
-                android:id="@id/handle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <!--<ImageView-->
+                <!--android:id="@id/handle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
 
 
-                android:src="@drawable/jyleft" />
+                <!--android:src="@drawable/jyleft" />-->
 
-            <!-- layout for the content of the SLidingDrawer -->
-            <LinearLayout
-                android:id="@id/content"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:orientation="horizontal"
-                android:rotation="180">
-                <!-- DEFINE ALL YOUR CONTENT,WIDGETS HERE WHICH YOU WANT TO ADD IN SLIDING DRAWER LAYOUT. -->
-                <ListView
-                    android:id="@+id/simpleListView"
+            <!--&lt;!&ndash; layout for the content of the SLidingDrawer &ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:id="@id/content"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:rotation="180">-->
+                <!--&lt;!&ndash; DEFINE ALL YOUR CONTENT,WIDGETS HERE WHICH YOU WANT TO ADD IN SLIDING DRAWER LAYOUT. &ndash;&gt;-->
+                <!--<ListView-->
+                    <!--android:id="@+id/simpleListView"-->
 
 
-                    android:layout_width="match_parent"
-                    android:layout_height="fill_parent" />
-            </LinearLayout>
-        </SlidingDrawer>
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="fill_parent" />-->
+            <!--</LinearLayout>-->
+        <!--</SlidingDrawer>-->
     </RelativeLayout>
 
 </RelativeLayout>
